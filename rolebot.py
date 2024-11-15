@@ -132,5 +132,15 @@ async def notify_role_change(source_guild, source_role, action, member):
     
     await channel.send(embed=embed)
 
+@bot.command(name="sync")
+async def sync(ctx):
+    if ctx.author.id != YOUR_ID:  # Replace with your user ID to limit access to the bot owner
+        await ctx.send("You do not have permission to use this command.")
+        return
+
+    await ctx.send("Manual sync triggered. Syncing roles...")
+
+    await sync_roles()
+
 # Run the bot with your token
 bot.run("YOUR_BOT_TOKEN")
