@@ -2,7 +2,7 @@
 A discord python bot to check for users with specified roles on source server and assign associated roles on destination.
 
 # Installation
-1.  Clone Repo
+1.  Clone Repo ```git clone https://github.com/BadWolf0081/RoleBot.git```
 2.  Create venv ```python -m venv rolevenv```
 3.  install dependency ```rolevenv/bin/pip install discord.py```
 4.  Modify script with the following items:
